@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: validation
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tenant-resolver-demo
+  namespace: validation
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: resolver
+          image: ghcr.io/your-org/validation-platform:latest
+          command: ["python", "scripts/run_validation.py"]
+          args: ["--tenants", "examples/tenants.sample.json"]

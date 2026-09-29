@@ -1,0 +1,7 @@
+[
+  {"tenant_name": "tenant-alpha", "tenant_url": "https://httpbin.org", "cluster_name": "cluster-a", "environment": "staging"},
+  {"tenant_name": "tenant-beta", "tenant_url": "https://httpbin.org", "cluster_name": "cluster-a", "environment": "staging"},
+  {"tenant_name": "tenant-gamma", "tenant_url": "https://httpbin.org", "cluster_name": "cluster-b", "environment": "prod"},
+  {"tenant_name": "tenant-delta", "tenant_url": "https://httpbin.org", "cluster_name": "cluster-b", "environment": "prod"},
+  {"tenant_name": "tenant-epsilon", "tenant_url": "https://httpbin.org", "cluster_name": "cluster-c", "environment": "prod"}
+]
